@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+     _                          _              
+    / \   _ __  _ __  _ __ __ _| |_ ___   ___  
+   / _ \ | '_ \| '_ \| '__/ _` | __/ _ \ / _ \ 
+  / ___ \| |_) | |_) | | | (_| | || (_) | (_) |
+ /_/   \_\ .__/| .__/|_|  \__,_|\__\___/ \___/ 
+         |_|   |_|                                                                     
+-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title %}Platform Bonobo{% endblock %}</title>
+
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+        <link rel="stylesheet" href="{{ asset('platform/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('platform/dist/css/dropzone.css') }}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="{{ asset('platform/plugins/datepicker/datepicker3.css') }}">
+        <link rel="stylesheet" href="{{ asset('platform/plugins/magnific-popup/dist/magnific-popup.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('platform/plugins/toastr/toastr.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('platform/dist/css/AdminLTE.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('platform/dist/css/skins/skin-red-light.min.css') }}">
+    </head>
+
+    <body class="hold-transition skin-red-light sidebar-mini">
+        <div class="wrapper">
+            <header class="main-header">
+                <a href="#" class="logo">
+                    <span class="logo-mini"><b>Appratoo</b></span>
+                    <span class="logo-lg"><b>Bonobo</b></span>
+                </a>
+
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#"><i class="fa fa-home"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <aside class="main-sidebar">
+
+                <section class="sidebar">
+                    <ul class="sidebar-menu">
+
+                        <li class="header">Administration</li>
+
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-home"></i>
+                                <span>Gestion de site</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+
+                            <ul class="treeview-menu">
+                                <li><a href="#">aaaaa</a></li>
+                                <li><a href="#">bbbbb</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-users"></i> <span>AAAAAAA</span></a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-users"></i> <span>BBBBBBB</span></a>
+                        </li>
+
+                    </ul>
+                </section>
+
+            </aside>
+
+        {% block body %}{% endblock %}
+
+        <footer class="main-footer">
+            <strong>Copyright Appratoo &copy; 2017. All rights reserved.
+        </footer>
+        <div class="control-sidebar-bg"></div>
+    </div>
+
+    <script src="{{ asset('platform/plugins/jQuery/jquery-2.2.3.min.js') }}"></script>
+    <script src="{{ asset('platform/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('platform/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('platform/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+    <script src="{{ asset('platform/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
+    <script src="{{ asset('platform/plugins/datepicker/locales/bootstrap-datepicker.fr.js') }}"></script>
+    <script src="{{ asset('platform/plugins/magnific-popup/dist/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('platform/plugins/toastr/toastr.min.js') }}"></script>
+    <script src="{{ asset('platform/dist/js/app.min.js') }}"></script>
+{% block js %}{% endblock %}
+</body>
+</html>
