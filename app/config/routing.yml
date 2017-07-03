@@ -1,0 +1,4 @@
+appratoo_platform:
+    resource: "@AppratooPlatformBundle/Resources/config/routing.yml"
+    prefix:   /
+
