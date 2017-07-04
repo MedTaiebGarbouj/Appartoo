@@ -1,3 +1,27 @@
 appratoo_platform_homepage:
     path:     /
-    defaults: { _controller: AppratooPlatformBundle:Default:index }
+    defaults: { _controller: AppratooPlatformBundle:Home:index }
+
+appratoo_platform_liste_amis:
+    path:     /liste-amis
+    defaults: { _controller: AppratooPlatformBundle:Amis:listeAmis }
+
+appratoo_platform_ajouter_ami:
+    path:   /ajouter-ami/{id}
+    defaults:  { _controller: AppratooPlatformBundle:Amis:ajouterAmi }
+    requirements:
+        id:  \d+
+
+appratoo_platform_supprimer_ami:
+    path:   /supprimer-ami/{id}
+    defaults:  { _controller: AppratooPlatformBundle:Amis:supprimerAmi }
+    requirements:
+        id:  \d+
+
+appratoo_platform_afficher_mes_informations:
+    path:     /mes-informations
+    defaults: { _controller: AppratooPlatformBundle:Bonobo:mesInformations }
+
+appratoo_platform_modifier_mes_informations:
+    path:     /modifier-mes-informations
+    defaults: { _controller: AppratooPlatformBundle:Bonobo:modifierMesInformations }

@@ -187,4 +187,8 @@ class User extends BaseUser {
         return $this->amis;
     }
 
+    public function estAmi($ami) {
+        return $this->getAmis()->contains($ami);
+    }
+
 }

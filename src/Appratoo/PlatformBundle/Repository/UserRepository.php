@@ -9,5 +9,4 @@ namespace Appratoo\PlatformBundle\Repository;
  * repository methods below.
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository {
-    
 }

@@ -29,7 +29,7 @@
     <body class="hold-transition skin-red-light sidebar-mini">
         <div class="wrapper">
             <header class="main-header">
-                <a href="#" class="logo">
+                <a href="{{ path('appratoo_platform_homepage') }}" class="logo">
                     <span class="logo-mini"><b>Appratoo</b></span>
                     <span class="logo-lg"><b>Bonobo</b></span>
                 </a>
@@ -41,10 +41,10 @@
                     <div class="navbar-custom-menu">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="#"><i class="fa fa-home"></i></a>
+                                <a href="{{ path('appratoo_platform_homepage') }}"><i class="fa fa-home"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-sign-out"></i></a>
+                                <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-sign-out"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -56,28 +56,14 @@
                 <section class="sidebar">
                     <ul class="sidebar-menu">
 
-                        <li class="header">Administration</li>
+                        <li class="header">Platform</li>
 
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-home"></i>
-                                <span>Gestion de site</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-
-                            <ul class="treeview-menu">
-                                <li><a href="#">aaaaa</a></li>
-                                <li><a href="#">bbbbb</a></li>
-                            </ul>
+                        <li>
+                            <a href="{{ path('appratoo_platform_liste_amis') }}"><i class="fa fa-users"></i> <span>Liste des amis</span></a>
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-users"></i> <span>AAAAAAA</span></a>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-users"></i> <span>BBBBBBB</span></a>
+                            <a href="{{ path('appratoo_platform_afficher_mes_informations') }}"><i class="fa fa-users"></i> <span>Mes informations</span></a>
                         </li>
 
                     </ul>
